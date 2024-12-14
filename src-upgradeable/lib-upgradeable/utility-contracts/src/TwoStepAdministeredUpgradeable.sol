@@ -79,7 +79,7 @@ contract TwoStepAdministeredUpgradeable is
         emit AdministratorUpdated(msg.sender, newAdministrator);
     }
 
-    ///@notice Acept administration of smart contract, after the current administrator has initiated the process with transferAdministration
+    ///@notice Accept administration of smart contract, after the current administrator has initiated the process with transferAdministration
     function acceptAdministration() public virtual {
         address _potentialAdministrator = TwoStepAdministeredStorage
             .layout()
