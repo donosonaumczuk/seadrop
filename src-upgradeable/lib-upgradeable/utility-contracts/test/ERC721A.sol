@@ -668,7 +668,7 @@ contract ERC721A is IERC721A {
 
             // Updates:
             // - `address` to the next owner.
-            // - `startTimestamp` to the timestamp of transfering.
+            // - `startTimestamp` to the timestamp of transferring.
             // - `burned` to `false`.
             // - `nextInitialized` to `true`.
             _packedOwnerships[tokenId] = _packOwnershipData(
